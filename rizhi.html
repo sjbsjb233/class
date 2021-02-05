@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>课程记录</title>
+</head>
+<body>
+    <div>PS:只支持读取本月日志详情,若要查看本月之前的课时信息,请调取服务器后台数据!</div>
+    <br>
+    {% for x in data %}
+    <div>{{ x }}</div>
+    
+    {% endfor %}
+</body>
+</html>

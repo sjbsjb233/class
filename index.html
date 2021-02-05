@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>课程表</title>
+    <style>
+        .xuanze {
+            font-size: 25px;
+        }
+        .send{
+            font-size: 50px;
+            display:table;
+            margin:0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="text-align: center;font-size: 35px;">课程记录系统</div>
+    <a href="\rizhi\"><div style="text-align: center;font-size: 20px;">查看记录</div></a>
+    <br>
+    <br>
+    <form action="/send/" method="post">
+        {% csrf_token %}
+        <div style="font-size: 30px;">课程地点</div>
+        <select name="place" class="xuanze">
+            <option value="谢坤">谢坤</option>
+        </select>
+        <br>
+        <br>
+        <div style="font-size: 30px;">开始时间</div>
+        <select name="time" class="xuanze">
+            <option value="上午6:00">上午6:00</option>
+            <option value="上午6:30">上午6:30</option>
+            <option value="上午7:00">上午7:00</option>
+            <option value="上午7:30">上午7:30</option>
+            <option value="上午8:00">上午8:00</option>
+            <option value="上午8:30">上午8:30</option>
+            <option value="上午9:00">上午9:00</option>
+            <option value="上午9:30">上午9:30</option>
+            <option value="上午10:00">上午10:00</option>
+            <option value="上午10:30">上午10:30</option>
+            <option value="上午11:00">上午11:00</option>
+            <option value="上午11:30">上午11:30</option>
+            <option value="下午12:00">下午12:00</option>
+            <option value="下午12:30">下午12:30</option>
+            <option value="下午1:00">下午1:00</option>
+            <option value="下午1:30">下午1:30</option>
+            <option value="下午2:00">下午2:00</option>
+            <option value="下午2:30">下午2:30</option>
+            <option value="下午3:00">下午3:00</option>
+            <option value="下午3:30">下午3:30</option>
+            <option value="下午4:00">下午4:00</option>
+            <option value="下午4:30">下午4:30</option>
+            <option value="下午5:00">下午5:00</option>
+            <option value="下午5:30">下午5:30</option>
+            <option value="下午6:00">下午6:00</option>
+            <option value="下午6:30">下午6:30</option>
+            <option value="下午7:00">下午7:00</option>
+            <option value="下午7:30">下午7:30</option>
+            <option value="下午8:00">下午8:00</option>
+            <option value="下午8:30">下午8:30</option>
+            <option value="下午9:00">下午9:00</option>
+            <option value="下午9:30">下午9:30</option>
+            <option value="下午10:00">下午10:00</option>
+            <option value="下午10:30">下午10:30</option>
+        </select>
+        <br>
+        <br>
+        <div style="font-size: 30px;">课程时长</div>
+        <select name="time_line" class="xuanze">
+            <option value="2小时">2小时</option>
+            <option value="1小时30分钟">1小时30分钟</option>
+            <option value="1小时">1小时</option>
+            <option value="30分钟">30分钟</option>
+        </select>
+        <br>
+        <br>
+        <div style="font-size: 30px;">课程名称</div>
+        <select name="xueke" class="xuanze">
+            <option value="语文">语文</option>
+            <option value="数学">数学</option>
+            <option value="英语">英语</option>
+            <option value="物理">物理</option>
+            <option value="化学">化学</option>
+            <option value="生物">生物</option>
+            <option value="历史">历史</option>
+            <option value="政治">政治</option>
+            <option value="地理">地理</option>
+            <option value="技术">技术</option>
+        </select>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button class="send">保存</button>
+    </form>
+</body>
+
+</html>
